@@ -46,6 +46,7 @@ html {
     margin: 0 auto;
 }
 
+
 /*HEADER*/
 
 
@@ -55,13 +56,14 @@ header {
     background-size: 1280px 200px;
     grid-column: 1/9;
     grid-row: 1;
+    
 }
 
 header .navbar {
     min-height: 10vh;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 .header__logo {
@@ -75,6 +77,7 @@ header .header__botones {
     justify-content: space-between;
     font-family: var(--font-nav);
     list-style-type: none;
+    margin: 0 auto;
 }
 
 nav ul li:hover {
@@ -91,8 +94,16 @@ nav ul li a {
 #contenedor__Home__Grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 
+}
+
+/* CAROUSEL */
+#carouselExampleCaptions{
+    margin: 4rem ;
+}
+main div .carousel-background-color {
+    background-color: black;
 }
 
 /*MAIN*/
@@ -109,31 +120,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     margin: 3rem;
-}
-
-.pastasYSalsas {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#imgPastas {
-    justify-content: flex-start;
-    width: 55%;
-    margin: 1%;
-}
-
-
-.pastasYSalsas__text {
-    display: flex;
-    font-family: var(--font-title);
-    text-align: center;
-    align-items: center;
-}
-
-.pastasYSalsas__text:hover{
-    text-decoration: underline;
-    color: blue;
 }
 
 .pastasYSalsas__boton {
@@ -155,31 +141,6 @@ main {
 }
 
 /*Tarjeta Recetas Express*/
-
-.recetasExpress {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-
-#imgRecetasExpress {
-    max-width: 65%;
-    justify-content: flex-end;
-    margin: 1%;
-}
-
-.recetasExpress__text {
-    display: flex;
-    font-family: var(--font-title);
-    font-size: var(--text-large);
-    align-self: center;
-    text-align: center;
-}
-
-.recetasExpress__text:hover {
-    text-decoration: underline;
-    color: blue;
-}
 
 .recetasExpress__boton {
     display: flex;
@@ -400,7 +361,7 @@ ul {
     
 }
 
-  .expressImg {
+.expressImg {
     float: right;
     margin-left: 10%;
     max-width: 40%;
@@ -437,45 +398,13 @@ ul {
     padding-bottom: 2%;
 }
 
-.form__campos {
-    font-family: 'Hubballi', cursive;
-
-    
-} 
-
-#comentarios{
-    height: 20vh;
-}
-#formContact{
-    padding-left: 30%;
-}
-
 .form__text {
     text-align: center;
     padding-bottom: 2%;
     font-family: 'Hubballi', cursive;
 }
 
-#campo__nombre {
-    float: left;
-}
-
-#campo__email{
-    padding-left: 30%; 
-}
-
-#campo__comentarios{
-    padding: 5% 0% 5% 15%;
-
-}
-
-#enviar__boton{
-    margin: 0% 0% 2% 40%;
-    font-family: 'Fredoka', sans-serif;
-  
-    
-}
-
+/* MEDIAS */
 
 @media screen and (max-width: 480px) {
     #contenedor__Home__Grid {
@@ -562,7 +491,7 @@ ul {
 
     header {
         padding: 2rem;
-        background-size: 1000px 400px;
+        background-size: 1200px 500px;
     }
 
     .header__logo{
@@ -577,50 +506,6 @@ ul {
         margin: 0 20px;
     }
 
-    .main__container1 {
-        margin: 1rem;
-    }
-
-    .pastasYSalsas {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #imgPastas {
-        justify-content: center;
-        width: 90%;
-        margin: 1%;
-    }
-
-    .pastasYSalsas__text {
-        display: none;
-
-    }
-
-    .pastasYSalsas__boton {
-        padding: 1%;
-        height: 40%;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    #imgRecetasExpress {
-        max-width: 90%;
-        justify-content: center;
-        margin: 1%;
-    }
-
-    .recetasExpress__text {
-        display: none;
-    }
-
-    .recetasExpress__boton {
-        padding: 1%;
-        height: 40%;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
     .footer__logos {
         padding-left: 70%;
         width: 100%;
@@ -628,3 +513,15 @@ ul {
     }
 }
 
+@media screen and (max-width: 920px) {
+    #contenedor__Home__Grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    header {
+        padding: 2rem;
+        background-size: 1200px 500px;
+    }
+ 
+}
