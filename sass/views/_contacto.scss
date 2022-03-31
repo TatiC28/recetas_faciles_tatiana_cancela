@@ -1,0 +1,30 @@
+/*Pagina Contacto*/
+
+.contenedor__contacto__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+.main__container__contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+.contacto__titulo {
+    font-family: $font-title;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.form__text {
+    text-align: center;
+    padding-bottom: 2%;
+    font-family: 'Hubballi', cursive;
+}
+.btn-primary {
+    margin-top: 2%;
+}

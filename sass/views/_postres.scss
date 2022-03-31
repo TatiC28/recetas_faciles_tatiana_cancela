@@ -1,0 +1,38 @@
+/* Pagina Postres*/
+
+.contenedor__postres__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+}
+
+.main__container__postres {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+#receta__panqueques{
+    padding: 0% 0% 10% 3%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#panquequesImg{
+    float: right;
+    margin-left: 10%;
+    max-width: 40%;
+}
+
+#receta__churros {
+    padding: 0% 0% 10% 3%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#churrosImg{
+    float: right;
+    margin-left: 10%;
+    max-width: 40%;
+}

@@ -1,0 +1,67 @@
+/* Pagina Recetas */
+
+#contenedor__Recetas__Grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+}
+
+.main__container__Recetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.receta__pizza {
+    padding: 0% 0% 25% 3%;
+    margin-right: 5%;
+    text-align: left;
+
+}
+
+
+#amasando {
+    float: right;
+    margin-left: 10%;
+    max-width: 30%;
+
+}
+
+#amasando2 {
+    float: right;
+    margin-left: 10%;
+    max-width: 30%;
+}
+
+#croquetasImg {
+    float: right;
+    margin-left: 50%;
+    max-width: 40%;
+}
+
+#receta__croquetas {
+    padding: 0% 0% 5% 3%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+.Recetas__Titulo {
+    font-family: $font-title;
+    font-size: 30px;
+}
+
+.Subtitulo__Recetas {
+    font-family: $font-subtitle;
+    font-size: 20px;
+}
+
+.texto__Recetas {
+    font-family: $font-text;
+    font-size: 20px;
+
+}

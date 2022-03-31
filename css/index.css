@@ -1,527 +1,350 @@
+/*Imports*/
+/* MISCELANEOUS */
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap");
 *,
 *::before,
 *::after {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+  margin: 0;
+  box-sizing: border-box; }
 
 html {
-    font-size: 62, 5%;
-}
+  font-size: 62, 5%; }
 
-/*VARIABLES*/
-
-:root {
-    --principal: rgb(202, 228, 245);
-    --secondary: rgb(118, 125, 226);
-    --font-nav: 'Bebas Neue', cursive;
-    --font-title: 'Poller One', cursive;
-    --font-subtitle: 'Merienda', cursive;
-    --font-text: 'Poiret One', cursive;
-    --text-large: 2em;
-    --text-medium: 1.5em;
-}
-
+/* VARIABLES */
 /*HELPERS*/
-
 .flex-row {
-    display: flex;
-    flex-direction: row;
-}
+  display: flex;
+  flex-direction: row; }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
-}
+  display: flex;
+  flex-direction: column; }
 
 .container {
-    max-width: 1080px;
-    margin: 0 auto;
-}
+  max-width: 1080px;
+  margin: 0 auto; }
 
-
+/* PARTIALS */
 /*HEADER*/
-
-
 header {
-    display: flex;
-    background-image: url(../assets/img/banner.jpg);
-    background-size: 1280px 200px;
-    grid-column: 1/9;
-    grid-row: 1;
-    
-}
-
-header .navbar {
+  display: flex;
+  background-image: url(../assets/img/banner.jpg);
+  background-size: 100%;
+  grid-column: 1/9;
+  grid-row: 1; }
+  header .navbar {
     min-height: 10vh;
     justify-content: space-between;
     align-items: center;
-    padding: 0 4rem;
-}
-
-.header__logo {
+    padding: 0 4rem; }
+  header .header__logo {
     flex-basis: 10%;
     flex-direction: row;
-    justify-content: flex-start;
-}
-
-header .header__botones {
+    justify-content: flex-start; }
+  header .navbar-nav {
     flex-basis: 50%;
     justify-content: space-between;
-    font-family: var(--font-nav);
+    font-family: "Bebas Neue", cursive;
     list-style-type: none;
-    margin: 0 auto;
-}
-
-nav ul li:hover {
-    background-color: pink;
-}
-
-nav ul li a {
+    margin: 0 auto; }
+  header .nav-link:hover {
+    background-color: pink; }
+  header .nav-link {
     text-decoration: underline;
     color: black;
-    font-size: var(--text-medium);
-    display: inline-block;
-}
-
-#contenedor__Home__Grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-
-}
-
-/* CAROUSEL */
-#carouselExampleCaptions{
-    margin: 4rem ;
-}
-main div .carousel-background-color {
-    background-color: black;
-}
-
-/*MAIN*/
-
-/*Tarjeta Pastas y Salsas*/
-
-main {
-    grid-column: 2/8;
-    grid-row: 2/11;
-}
-
-.main__container1 {
-    background-color: var(--principal);
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
-
-.pastasYSalsas__boton {
-    display: flex;
-    text-decoration: none;
-    font-family: 'Abel', sans-serif;
-    color: black;
-    background-color: rgb(240, 240, 110);
-    padding: 1%;
-    flex-direction: column;
-    justify-content: center;
-    height: 10%;
-}
-
-.pastasYSalsas__boton:hover {
-    text-decoration: underline;
-    color: white;
-    
-}
-
-/*Tarjeta Recetas Express*/
-
-.recetasExpress__boton {
-    display: flex;
-    text-decoration: none;
-    font-family: 'Abel', sans-serif;
-    color: black;
-    background-color: rgb(240, 240, 110);
-    padding: 1%;
-    flex-direction: column;
-    justify-content: center;
-    height: 10%;
-}
-
-.recetasExpress__boton:hover {
-    text-decoration: underline;
-    color: white;
-    
-}
+    font-size: 1.5em;
+    display: inline-block; }
 
 /*FOOTER*/
 footer {
-    height: 10vh;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1/11;
-    grid-row: 11;
-}
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1/11;
+  grid-row: 11; }
 
 .footer {
-    display: flex;
-    font-family: 'Abel', sans-serif;
-    background-color: var(--secondary);
-    flex-direction: column-reverse;
-    padding: 3%;
-}
+  display: flex;
+  font-family: 'Abel', sans-serif;
+  background-color: #cbcacb;
+  flex-direction: column-reverse;
+  padding: 4%; }
+
+/* VIEWS */
+#contenedor__Home__Grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr 1fr; }
+
+/* HOME */
+/* CAROUSEL */
+#carouselExampleCaptions {
+  margin: 4rem; }
+
+main div .carousel-background-color {
+  background-color: black; }
+
+/*MAIN*/
+main {
+  grid-column: 2/8;
+  grid-row: 2/11; }
+
+/*Imagen Pastas y Salsas*/
+.borde {
+  border: #cae4f5 15px solid; }
+
+.main__container1 {
+  background-color: #cae4f5;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
+
+.pastasYSalsas__boton {
+  display: flex;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  background-color: #f0f06e;
+  padding: 1%;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%; }
+
+.pastasYSalsas__boton:hover {
+  text-decoration: underline;
+  color: white; }
+
+/*Imagen Recetas Express*/
+.recetasExpress__boton {
+  display: flex;
+  text-decoration: none;
+  font-family: 'Abel', sans-serif;
+  color: black;
+  background-color: #f0f06e;
+  padding: 1%;
+  flex-direction: column;
+  justify-content: center;
+  height: 10%; }
+
+.recetasExpress__boton:hover {
+  text-decoration: underline;
+  color: white; }
 
 /* Pagina Recetas */
-
 #contenedor__Recetas__Grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-
-}
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr); }
 
 .main__container__Recetas {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
 
 ul {
-    list-style: none;
-}
+  list-style: none; }
 
 .receta__pizza {
-    padding: 0% 0% 25% 3%;
-    margin-right: 5%;
-    text-align: left;
-
-}
-
+  padding: 0% 0% 25% 3%;
+  margin-right: 5%;
+  text-align: left; }
 
 #amasando {
-    float: right;
-    margin-left: 10%;
-    max-width: 30%;
-
-}
+  float: right;
+  margin-left: 10%;
+  max-width: 30%; }
 
 #amasando2 {
-    float: right;
-    margin-left: 10%;
-    max-width: 30%;
-}
+  float: right;
+  margin-left: 10%;
+  max-width: 30%; }
 
 #croquetasImg {
-    float: right;
-    margin-left: 50%;
-    max-width: 40%;
-}
+  float: right;
+  margin-left: 50%;
+  max-width: 40%; }
 
 #receta__croquetas {
-    padding: 0% 0% 5% 3%;
-    margin-right: 5%;
-    text-align: left;
-}
+  padding: 0% 0% 5% 3%;
+  margin-right: 5%;
+  text-align: left; }
 
 .Recetas__Titulo {
-    font-family: var(--font-title);
-    font-size: 30px;
-}
+  font-family: "Poller One", cursive;
+  font-size: 30px; }
 
 .Subtitulo__Recetas {
-    font-family: var(--font-subtitle);
-    font-size: 20px;
-}
+  font-family: "Merienda", cursive;
+  font-size: 20px; }
 
 .texto__Recetas {
-    font-family: var(--font-text);
-    font-size: 20px;
-
-}
+  font-family: "Poiret One", cursive;
+  font-size: 20px; }
 
 /* Pagina Postres*/
-
 .contenedor__postres__grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-
-}
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr); }
 
 .main__container__postres {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
 
-#receta__panqueques{
-    padding: 0% 0% 10% 3%;
-    margin-right: 5%;
-    text-align: left;
-}
+#receta__panqueques {
+  padding: 0% 0% 10% 3%;
+  margin-right: 5%;
+  text-align: left; }
 
-#panquequesImg{
-    float: right;
-    margin-left: 10%;
-    max-width: 40%;
-}
+#panquequesImg {
+  float: right;
+  margin-left: 10%;
+  max-width: 40%; }
 
 #receta__churros {
-    padding: 0% 0% 10% 3%;
-    margin-right: 5%;
-    text-align: left;
-}
+  padding: 0% 0% 10% 3%;
+  margin-right: 5%;
+  text-align: left; }
 
-#churrosImg{
-    float: right;
-    margin-left: 10%;
-    max-width: 40%;
-}
-
-
-/*Pagina Ver Mas Pastas y Salsas*/
-
-.contenedor__pastas__y__salsas__grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-
-}
-
-.main__container__pastas__y__salsas {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
-
-#receta__pastas{
-    padding: 0% 0% 10% 3%;
-    margin-right: 5%;
-    text-align: left;
-}
-
-#pastasImg{
-    float: right;
-    margin-left: 10%;
-    max-width: 40%;
-}
-
-#receta__noquis {
-    padding: 0% 0% 10% 3%;
-    margin-right: 5%;
-    text-align: left;
-}
-
-#noquisImg {
-    float: right;
-    margin-left: 10%;
-    max-width: 40%;
-}
-
-
-
-/*Paginas Ver Mas*/
-
-.RecetasTitulo__Grande {
-    font-family: var(--font-title);
-    font-size: medium;
-}
-
-/*Pagina Ver Mas Recetas Express*/
-
-.contenedor__recetas__express__grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-
-}
-
-.main__container__recetas__express {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
-
-.RecetasTitulo__Grande{
-    text-align: center;
-    font-size: 3em;
-    padding-bottom: 3%;
-}
-
-#recetas__sandwich{
-    padding: 0% 0% 10% 3%;
-    margin-right: 5%;
-    text-align: left
-    
-}
-
-.expressImg {
-    float: right;
-    margin-left: 10%;
-    max-width: 40%;
-}
-
-#recetas__Tarta{
-    padding: 0% 0% 25% 3%;
-    margin-right: 5%;
-    text-align: left;
-
-}
-
-
+#churrosImg {
+  float: right;
+  margin-left: 10%;
+  max-width: 40%; }
 
 /*Pagina Contacto*/
-
 .contenedor__contacto__grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-
-}
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr); }
 
 .main__container__contacto {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem;
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
 
 .contacto__titulo {
-    font-family: var(--font-title);
-    font-size: 2em;
-    text-align: center;
-    padding-bottom: 2%;
-}
+  font-family: "Poller One", cursive;
+  font-size: 2em;
+  text-align: center;
+  padding-bottom: 2%; }
 
 .form__text {
-    text-align: center;
-    padding-bottom: 2%;
-    font-family: 'Hubballi', cursive;
-}
+  text-align: center;
+  padding-bottom: 2%;
+  font-family: 'Hubballi', cursive; }
+
+.btn-primary {
+  margin-top: 2%; }
+
+/*Pagina Ver Mas Pastas y Salsas*/
+.contenedor__pastas__y__salsas__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr); }
+
+.main__container__pastas__y__salsas {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
+
+#receta__pastas {
+  padding: 0% 0% 10% 3%;
+  margin-right: 5%;
+  text-align: left; }
+
+#pastasImg {
+  float: right;
+  margin-left: 10%;
+  max-width: 40%; }
+
+#receta__noquis {
+  padding: 0% 0% 10% 3%;
+  margin-right: 5%;
+  text-align: left; }
+
+#noquisImg {
+  float: right;
+  margin-left: 10%;
+  max-width: 40%; }
+
+/*Paginas Ver Mas*/
+.RecetasTitulo__Grande {
+  font-family: "Poller One", cursive;
+  font-size: medium; }
+
+/*Pagina Ver Mas Recetas Express*/
+.contenedor__recetas__express__grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr); }
+
+.main__container__recetas__express {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 3rem; }
+
+.RecetasTitulo__Grande {
+  text-align: center;
+  font-size: 3em;
+  padding-bottom: 3%; }
+
+#recetas__sandwich {
+  padding: 0% 0% 10% 3%;
+  margin-right: 5%;
+  text-align: left; }
+
+.expressImg {
+  float: right;
+  margin-left: 10%;
+  max-width: 40%; }
+
+#recetas__Tarta {
+  padding: 0% 0% 25% 3%;
+  margin-right: 5%;
+  text-align: left; }
 
 /* MEDIAS */
-
 @media screen and (max-width: 480px) {
-    #contenedor__Home__Grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
+  #contenedor__Home__Grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr; }
+  header {
+    padding: 2rem;
+    background-size: 100%; }
+  .header__logo {
+    display: none; }
+  .footer__logos {
+    padding-left: 70%;
+    width: 100%;
+    box-sizing: content-box; } }
 
-    header {
-        padding: 2rem;
-        background-size: 1000px 400px;
-    }
+@media screen and (max-width: 770px) {
+  #contenedor__Home__Grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr; }
+  header {
+    padding: 2rem;
+    background-size: 150%; }
+  .header__logo {
+    display: none; }
+  header .navbar {
+    justify-content: flex-end;
+    padding: 0; }
+  .footer__logos {
+    padding-left: 70%;
+    width: 100%;
+    box-sizing: content-box; } }
 
-    header .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
-    .header__logo {
-        display: none;
-    }
-
-    header .header__botones {
-        flex-wrap: wrap;
-        flex-direction: column;
-        font-size: 0.8em;
-    }
-
-    .main__container1 {
-        margin: 1rem;
-    }
-
-    .pastasYSalsas {
-        justify-content: space-between;
-    }
-
-    #imgPastas {
-        justify-content: center;
-        width: 90%;
-        margin: 1%;
-    }
-
-    .pastasYSalsas__text {
-        display: none;
-
-    }
-
-    .pastasYSalsas__boton {
-        padding: 1%;
-        height: 40%;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    #imgRecetasExpress {
-        max-width: 90%;
-        justify-content: center;
-        margin: 1%;
-    }
-
-    .recetasExpress__text {
-        display: none;
-    }
-
-    .recetasExpress__boton {
-        padding: 1%;
-        height: 40%;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .footer__logos {
-        padding-left: 70%;
-        width: 100%;
-        box-sizing: content-box;
-    }
-}
-
-@media screen and (max-width: 769px) {
-    #contenedor__Home__Grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    header {
-        padding: 2rem;
-        background-size: 1200px 500px;
-    }
-
-    .header__logo{
-        display: none;
-    }
-
-    header .navbar {
-        justify-content: center;
-    }
-
-    header nav ul li{
-        margin: 0 20px;
-    }
-
-    .footer__logos {
-        padding-left: 70%;
-        width: 100%;
-        box-sizing: content-box;
-    }
-}
-
-@media screen and (max-width: 920px) {
-    #contenedor__Home__Grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    header {
-        padding: 2rem;
-        background-size: 1200px 500px;
-    }
- 
-}
+@media screen and (max-width: 991px) {
+  #contenedor__Home__Grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr; }
+  header {
+    padding: 2rem;
+    background-size: 1100px 450px; } }

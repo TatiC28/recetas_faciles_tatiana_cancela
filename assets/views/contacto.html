@@ -15,20 +15,29 @@
 <body>
     <div class="contenedor__contacto__grid">
         <header>
-            <nav class="navbar flex-row container">
+            <div class="navbar flex-row container">
                 <picture>
                     <a href="../../index.html">
                         <img style=" max-width: 50%;" src="../img/logo.png" alt="Logo Home"
                             class="header__logo flex-row">
                     </a>
                 </picture>
-                <ul class="header__botones flex-row">
-                    <li> <a href="../../index.html">Inicio</a> </li>
-                    <li> <a href="../views/recetas.html">Recetas</a> </li>
-                    <li> <a href="../views/postres.html">Postres</a></li>
-                    <li> <a href="../views/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                          <a class="nav-link active" aria-current="page" href="./recetas.html">Recetas</a>
+                          <a class="nav-link active" aria-current="page" href="./postres.html">Postres</a>
+                          <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </div>
+                      </div>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main class="main__container__contacto">
             <section>
@@ -50,7 +59,7 @@
         </main>
         <footer class="footer">
             <div>
-                <p class="copyrightText">Copyright © 2022 </p>
+                <p>Copyright © 2022 </p>
             </div>
             <div class="footer__logos">
                 <a href="https://www.twitter.com" target="_blank"><img style="max-width: 3%;" src="../img/tw.png"

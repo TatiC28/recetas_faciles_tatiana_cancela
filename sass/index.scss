@@ -1,0 +1,33 @@
+/*Imports*/
+
+/* MISCELANEOUS */
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import './misc/normalize';
+
+
+@import './misc/variables';
+@import './misc/mixins';
+@import './misc/animations';
+
+/* PARTIALS */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* VIEWS */ 
+
+@import './views/home';
+@import './views/recetas';
+@import './views/postres';
+@import './views/contacto';
+@import './views/pastas__y__salsas';
+@import './views/recetas__express';
+
+@import './misc/medias';
+

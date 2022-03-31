@@ -1,0 +1,40 @@
+/*Pagina Ver Mas Recetas Express*/
+
+.contenedor__recetas__express__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+}
+
+.main__container__recetas__express {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+.RecetasTitulo__Grande{
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 3%;
+}
+
+#recetas__sandwich{
+    padding: 0% 0% 10% 3%;
+    margin-right: 5%;
+    text-align: left
+    
+}
+
+.expressImg {
+    float: right;
+    margin-left: 10%;
+    max-width: 40%;
+}
+
+#recetas__Tarta{
+    padding: 0% 0% 25% 3%;
+    margin-right: 5%;
+    text-align: left;
+
+}

@@ -1,0 +1,18 @@
+/*FOOTER*/
+
+footer {
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/11;
+    grid-row: 11;
+
+    
+}
+.footer {
+    display: flex;
+    font-family: 'Abel', sans-serif;
+    background-color: $secondary;
+    flex-direction: column-reverse;
+    padding: 4%;
+}

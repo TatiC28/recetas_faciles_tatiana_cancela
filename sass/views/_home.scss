@@ -1,0 +1,73 @@
+#contenedor__Home__Grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+
+}
+/* HOME */
+
+/* CAROUSEL */
+
+#carouselExampleCaptions{
+    margin: 4rem ;
+}
+main div .carousel-background-color {
+    background-color: black;
+}
+
+/*MAIN*/
+
+main {
+    grid-column: 2/8;
+    grid-row: 2/11;
+}
+
+/*Imagen Pastas y Salsas*/
+
+.borde{
+ border:$principal 15px solid ;
+}
+.main__container1 {
+    background-color: $principal;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+.pastasYSalsas__boton {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: black;
+    background-color: rgb(240, 240, 110);
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+}
+
+.pastasYSalsas__boton:hover {
+    text-decoration: underline;
+    color: white;
+    
+}
+
+/*Imagen Recetas Express*/
+
+.recetasExpress__boton {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: black;
+    background-color: rgb(240, 240, 110);
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    height: 10%;
+}
+
+.recetasExpress__boton:hover {
+    text-decoration: underline;
+    color: white;
+    
+}

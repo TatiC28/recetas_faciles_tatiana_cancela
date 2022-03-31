@@ -1,0 +1,47 @@
+/*Pagina Ver Mas Pastas y Salsas*/
+
+.contenedor__pastas__y__salsas__grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+
+}
+
+.main__container__pastas__y__salsas {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem;
+}
+
+#receta__pastas{
+    padding: 0% 0% 10% 3%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#pastasImg{
+    float: right;
+    margin-left: 10%;
+    max-width: 40%;
+}
+
+#receta__noquis {
+    padding: 0% 0% 10% 3%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#noquisImg {
+    float: right;
+    margin-left: 10%;
+    max-width: 40%;
+}
+
+
+
+/*Paginas Ver Mas*/
+
+.RecetasTitulo__Grande {
+    font-family: $font-title;
+    font-size: medium;
+}
