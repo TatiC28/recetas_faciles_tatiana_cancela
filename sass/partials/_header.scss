@@ -9,35 +9,38 @@ header {
 
     .navbar {
         min-height: 10vh;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (row, space-between,center, 2rem);
         padding: 0 4rem;
+
+        &-nav{
+            flex-basis: 50%;
+            justify-content: space-between;
+            font-family: $font-nav;
+            list-style-type: none;
+            margin: 0 auto;
+        }  
     }
     
     .header__logo {
         flex-basis: 10%;
-        flex-direction: row;
-        justify-content: flex-start;
+        @include flex (row, space-between,flex-start, 2rem);
+        
     }
 
-    .navbar-nav{
-        flex-basis: 50%;
-        justify-content: space-between;
-        font-family: $font-nav;
-        list-style-type: none;
-        margin: 0 auto;
-    }
-
-    .nav-link:hover {
-        background-color: pink;
-    }
+    
 
     .nav-link{
         text-decoration: underline;
         color: black ;
-        font-size: $text-medium;
+        font-size: map-get($map: $text-size, $key: 'text-medium');
         display: inline-block;
+
+        &:hover {
+            background-color: pink;
+        }
     }
+
+   
 }
 
 

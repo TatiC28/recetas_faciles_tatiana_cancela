@@ -25,10 +25,10 @@ main {
 /*Imagen Pastas y Salsas*/
 
 .borde{
- border:$principal 15px solid ;
+ border:map-get($map: $background-colors, $key: 'principal') 15px solid ;
 }
 .main__container1 {
-    background-color: $principal;
+    background-color: map-get($map: $background-colors, $key: 'principal');
     display: grid;
     grid-template-columns: 1fr;
     margin: 3rem;

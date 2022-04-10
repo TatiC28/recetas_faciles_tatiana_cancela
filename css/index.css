@@ -16,10 +16,18 @@ html {
   font-size: 62, 5%; }
 
 /* VARIABLES */
-/*HELPERS*/
-.flex-row {
-  display: flex;
-  flex-direction: row; }
+/* Maps */
+.background-color--principal {
+  color: #cae4f5; }
+
+.background-color--secondary {
+  color: #cbcacb; }
+
+.text-size--text-large {
+  font-size: 2em; }
+
+.text-size--text-medium {
+  font-size: 1.5em; }
 
 .flex-column {
   display: flex;
@@ -39,26 +47,32 @@ header {
   grid-row: 1; }
   header .navbar {
     min-height: 10vh;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
     padding: 0 4rem; }
+    header .navbar-nav {
+      flex-basis: 50%;
+      justify-content: space-between;
+      font-family: "Bebas Neue", cursive;
+      list-style-type: none;
+      margin: 0 auto; }
   header .header__logo {
     flex-basis: 10%;
+    display: flex;
     flex-direction: row;
-    justify-content: flex-start; }
-  header .navbar-nav {
-    flex-basis: 50%;
     justify-content: space-between;
-    font-family: "Bebas Neue", cursive;
-    list-style-type: none;
-    margin: 0 auto; }
-  header .nav-link:hover {
-    background-color: pink; }
+    align-items: flex-start;
+    gap: 2rem; }
   header .nav-link {
     text-decoration: underline;
     color: black;
     font-size: 1.5em;
     display: inline-block; }
+    header .nav-link:hover {
+      background-color: pink; }
 
 /*FOOTER*/
 footer {
@@ -68,12 +82,14 @@ footer {
   grid-column: 1/11;
   grid-row: 11; }
 
-.footer {
+.footer, .footer-extend {
   display: flex;
   font-family: 'Abel', sans-serif;
-  background-color: #cbcacb;
   flex-direction: column-reverse;
   padding: 4%; }
+
+.footer-extend {
+  background-color: #cbcacb; }
 
 /* VIEWS */
 #contenedor__Home__Grid {
@@ -236,8 +252,7 @@ ul {
 
 .form__text {
   text-align: center;
-  padding-bottom: 2%;
-  font-family: 'Hubballi', cursive; }
+  padding-bottom: 2%; }
 
 .btn-primary {
   margin-top: 2%; }
@@ -337,7 +352,6 @@ ul {
     justify-content: flex-end;
     padding: 0; }
   .footer__logos {
-    padding-left: 70%;
     width: 100%;
     box-sizing: content-box; } }
 

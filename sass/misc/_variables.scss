@@ -1,9 +1,31 @@
 /* VARIABLES */
-$principal: rgb(202, 228, 245);
-$secondary: rgb(203, 202, 203);
+
 $font-nav: 'Bebas Neue',cursive;
 $font-title: 'Poller One',cursive;
 $font-subtitle: 'Merienda',cursive;
 $font-text: 'Poiret One',cursive;
-$text-large: 2em;
-$text-medium: 1.5em;
+
+
+/* Maps */
+
+$background-colors: (
+    'principal': rgb(202, 228, 245),
+    'secondary': rgb(203, 202, 203)
+);
+
+$text-size: (
+    'text-large': 2em,
+    'text-medium': 1.5em
+);
+
+@each $var, $color in $background-colors  {
+    .background-color--#{$var} {
+        color: #{$color};
+    }
+};
+
+@each $var, $val in $text-size {
+    .text-size--#{$var} {
+        font-size: #{$val};
+    }
+}

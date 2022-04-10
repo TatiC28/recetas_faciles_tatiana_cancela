@@ -12,7 +12,12 @@ footer {
 .footer {
     display: flex;
     font-family: 'Abel', sans-serif;
-    background-color: $secondary;
     flex-direction: column-reverse;
     padding: 4%;
+
+}
+
+.footer-extend {
+    @extend .footer;
+    background-color: map-get($map: $background-colors, $key: 'secondary');
 }
